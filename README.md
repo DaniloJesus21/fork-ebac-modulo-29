@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# 🚀 EBAC Módulo 29 – Projeto Vagas de Emprego
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto desenvolvido durante o módulo 29 do curso da EBAC, onde foi criada uma aplicação React para exibir vagas de emprego e o objetivo do projeto é utilizar o `styled-components` para estilização e seguir melhores práticas de organização e design.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Funcionalidades
 
-### `npm start`
+- Lista de vagas com título, localização, senioridade, modalidade, faixa salarial e requisitos.
+- Estilização responsiva e temas claros/escuros com `ThemeProvider`.
+- Aplicação de estilos globais.
+- Estrutura com componentes React reutilizáveis.
+- Componentização das partes do layout (container, cartões de vaga, botões etc.).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tecnologias utilizadas
 
-### `npm test`
+- React + TypeScript  
+- styled-components  
+- ESLint + Prettier (configurações recomendadas da EBAC)  
+- Vite ou Create React App (dependendo da configuração do repositório original)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Instalação e execução
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/DaniloJesus21/fork-ebac-modulo-29.git
+    cd fork-ebac-modulo-29
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instale as dependências:
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Rode o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    # ou
+    npm start
+    ```
 
-### `npm run eject`
+4. Abra no navegador:
+    ```
+    http://localhost:3000/
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🖌️ Customização do tema
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O tema está definido em `src/styles/Theme.ts`, assim:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```ts
+export const theme = {
+  colors: {
+    primary: '#a7727d',
+    secondary: '#f9f5e7'
+  }
+};
