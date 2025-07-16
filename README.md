@@ -57,7 +57,7 @@ Este é um projeto desenvolvido durante o módulo 29 do curso da EBAC, onde foi 
 O tema está definido em `src/styles/Theme.ts`, assim:
 
 ```ts
-export const theme = {
+export const Theme = {
   colors: {
     primary: '#a7727d',
     secondary: '#f9f5e7'
